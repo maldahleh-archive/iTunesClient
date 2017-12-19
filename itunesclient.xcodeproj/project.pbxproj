@@ -14,6 +14,7 @@
 		4A48FDCB1FE8B17400EEEEC6 /* SearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48FDCA1FE8B17400EEEEC6 /* SearchResultsController.swift */; };
 		4A48FDCE1FE8C6EE00EEEEC6 /* SearchResultsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48FDCD1FE8C6EE00EEEEC6 /* SearchResultsDataSource.swift */; };
 		4A48FDD01FE8C8B500EEEEC6 /* Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48FDCF1FE8C8B500EEEEC6 /* Stub.swift */; };
+		4A48FDD21FE8CBBF00EEEEC6 /* AlbumListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48FDD11FE8CBBF00EEEEC6 /* AlbumListController.swift */; };
 		4AFF2CB71FE8A6BC00C97C1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFF2CB61FE8A6BC00C97C1E /* AppDelegate.swift */; };
 		4AFF2CB91FE8A6BC00C97C1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFF2CB81FE8A6BC00C97C1E /* ViewController.swift */; };
 		4AFF2CBC1FE8A6BC00C97C1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AFF2CBA1FE8A6BC00C97C1E /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 		4A48FDCA1FE8B17400EEEEC6 /* SearchResultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsController.swift; sourceTree = "<group>"; };
 		4A48FDCD1FE8C6EE00EEEEC6 /* SearchResultsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsDataSource.swift; sourceTree = "<group>"; };
 		4A48FDCF1FE8C8B500EEEEC6 /* Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stub.swift; sourceTree = "<group>"; };
+		4A48FDD11FE8CBBF00EEEEC6 /* AlbumListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListController.swift; sourceTree = "<group>"; };
 		4AFF2CB31FE8A6BC00C97C1E /* itunesclient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = itunesclient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AFF2CB61FE8A6BC00C97C1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AFF2CB81FE8A6BC00C97C1E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 			children = (
 				4AFF2CB81FE8A6BC00C97C1E /* ViewController.swift */,
 				4A48FDCA1FE8B17400EEEEC6 /* SearchResultsController.swift */,
+				4A48FDD11FE8CBBF00EEEEC6 /* AlbumListController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 				4AFF2CB91FE8A6BC00C97C1E /* ViewController.swift in Sources */,
 				4A48FDCE1FE8C6EE00EEEEC6 /* SearchResultsDataSource.swift in Sources */,
 				4A48FDD01FE8C8B500EEEEC6 /* Stub.swift in Sources */,
+				4A48FDD21FE8CBBF00EEEEC6 /* AlbumListController.swift in Sources */,
 				4A48FDCB1FE8B17400EEEEC6 /* SearchResultsController.swift in Sources */,
 				4AFF2CB71FE8A6BC00C97C1E /* AppDelegate.swift in Sources */,
 				4A48FDC31FE8A78500EEEEC6 /* Genre.swift in Sources */,
