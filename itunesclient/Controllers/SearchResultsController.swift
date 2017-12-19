@@ -23,6 +23,8 @@ class SearchResultsController: UITableViewController {
         
         searchController.hidesNavigationBarDuringPresentation = true
         searchController.searchResultsUpdater = self
+        
+        definesPresentationContext = true
     }
     
     @objc func dismissSearchResultsController() {

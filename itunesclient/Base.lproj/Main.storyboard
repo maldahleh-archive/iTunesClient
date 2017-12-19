@@ -63,6 +63,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="c3b-ty-BFw" kind="show" identifier="showAlbums" id="Sta-RX-WVf"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -75,6 +78,47 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJ7-EQ-jg3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1311" y="133"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="tJZ-6y-LB5">
+            <objects>
+                <tableViewController id="c3b-ty-BFw" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="cOU-T9-TMw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="80" id="0qk-FD-3JN">
+                                <rect key="frame" x="0.0" y="28" width="375" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0qk-FD-3JN" id="vFU-yd-x5l">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f07-xg-SMP">
+                                            <rect key="frame" x="0.0" y="0.0" width="80" height="79.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="80" id="eqA-uL-h9j"/>
+                                                <constraint firstAttribute="height" constant="80" id="hDp-T5-eC2"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="f07-xg-SMP" firstAttribute="leading" secondItem="vFU-yd-x5l" secondAttribute="leading" id="AHd-ls-p6T"/>
+                                        <constraint firstItem="f07-xg-SMP" firstAttribute="top" secondItem="vFU-yd-x5l" secondAttribute="top" id="C2u-vc-59t"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="c3b-ty-BFw" id="Eu9-xl-XwI"/>
+                            <outlet property="delegate" destination="c3b-ty-BFw" id="CST-BO-lys"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2r9-3h-Thd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1309.5999999999999" y="970.16491754122944"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Fry-Nm-ydd">
