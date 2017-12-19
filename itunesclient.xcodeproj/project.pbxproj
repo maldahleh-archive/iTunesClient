@@ -12,6 +12,8 @@
 		4A48FDC51FE8A7CF00EEEEC6 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48FDC41FE8A7CF00EEEEC6 /* Album.swift */; };
 		4A48FDC71FE8ACB300EEEEC6 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48FDC61FE8ACB300EEEEC6 /* Song.swift */; };
 		4A48FDCB1FE8B17400EEEEC6 /* SearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48FDCA1FE8B17400EEEEC6 /* SearchResultsController.swift */; };
+		4A48FDCE1FE8C6EE00EEEEC6 /* SearchResultsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48FDCD1FE8C6EE00EEEEC6 /* SearchResultsDataSource.swift */; };
+		4A48FDD01FE8C8B500EEEEC6 /* Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48FDCF1FE8C8B500EEEEC6 /* Stub.swift */; };
 		4AFF2CB71FE8A6BC00C97C1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFF2CB61FE8A6BC00C97C1E /* AppDelegate.swift */; };
 		4AFF2CB91FE8A6BC00C97C1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFF2CB81FE8A6BC00C97C1E /* ViewController.swift */; };
 		4AFF2CBC1FE8A6BC00C97C1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AFF2CBA1FE8A6BC00C97C1E /* Main.storyboard */; };
@@ -25,6 +27,8 @@
 		4A48FDC41FE8A7CF00EEEEC6 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		4A48FDC61FE8ACB300EEEEC6 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		4A48FDCA1FE8B17400EEEEC6 /* SearchResultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsController.swift; sourceTree = "<group>"; };
+		4A48FDCD1FE8C6EE00EEEEC6 /* SearchResultsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsDataSource.swift; sourceTree = "<group>"; };
+		4A48FDCF1FE8C8B500EEEEC6 /* Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stub.swift; sourceTree = "<group>"; };
 		4AFF2CB31FE8A6BC00C97C1E /* itunesclient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = itunesclient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AFF2CB61FE8A6BC00C97C1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AFF2CB81FE8A6BC00C97C1E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,6 +56,7 @@
 				4A48FDC21FE8A78500EEEEC6 /* Genre.swift */,
 				4A48FDC41FE8A7CF00EEEEC6 /* Album.swift */,
 				4A48FDC61FE8ACB300EEEEC6 /* Song.swift */,
+				4A48FDCF1FE8C8B500EEEEC6 /* Stub.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -70,6 +75,14 @@
 				4A48FDCA1FE8B17400EEEEC6 /* SearchResultsController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4A48FDCC1FE8C6D100EEEEC6 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				4A48FDCD1FE8C6EE00EEEEC6 /* SearchResultsDataSource.swift */,
+			);
+			path = DataSources;
 			sourceTree = "<group>";
 		};
 		4AFF2CAA1FE8A6BC00C97C1E = {
@@ -91,6 +104,7 @@
 		4AFF2CB51FE8A6BC00C97C1E /* itunesclient */ = {
 			isa = PBXGroup;
 			children = (
+				4A48FDCC1FE8C6D100EEEEC6 /* DataSources */,
 				4A48FDBD1FE8A70300EEEEC6 /* Models */,
 				4A48FDBE1FE8A70B00EEEEC6 /* Views */,
 				4A48FDBF1FE8A71100EEEEC6 /* Controllers */,
@@ -178,6 +192,8 @@
 				4A48FDC71FE8ACB300EEEEC6 /* Song.swift in Sources */,
 				4A48FDC11FE8A73200EEEEC6 /* Artist.swift in Sources */,
 				4AFF2CB91FE8A6BC00C97C1E /* ViewController.swift in Sources */,
+				4A48FDCE1FE8C6EE00EEEEC6 /* SearchResultsDataSource.swift in Sources */,
+				4A48FDD01FE8C8B500EEEEC6 /* Stub.swift in Sources */,
 				4A48FDCB1FE8B17400EEEEC6 /* SearchResultsController.swift in Sources */,
 				4AFF2CB71FE8A6BC00C97C1E /* AppDelegate.swift in Sources */,
 				4A48FDC31FE8A78500EEEEC6 /* Genre.swift in Sources */,

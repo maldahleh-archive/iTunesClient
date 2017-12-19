@@ -11,6 +11,7 @@ import UIKit
 class SearchResultsController: UITableViewController {
 
     let searchController = UISearchController(searchResultsController: nil)
+    let dataSource = SearchResultsDataSource()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,9 +19,20 @@ class SearchResultsController: UITableViewController {
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(SearchResultsController.dismissSearchResultsController))
         
         tableView.tableHeaderView = searchController.searchBar
+        tableView.dataSource = dataSource
+        
+        searchController.hidesNavigationBarDuringPresentation = true
+        searchController.searchResultsUpdater = self
     }
     
     @objc func dismissSearchResultsController() {
         dismiss(animated: true, completion: nil)
+    }
+}
+
+extension SearchResultsController: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        dataSource.update(with: [Stub.artist])
+        tableView.reloadData()
     }
 }
