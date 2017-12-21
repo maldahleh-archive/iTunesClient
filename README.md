@@ -1,3 +1,3 @@
 # iTunes Client
 
-iTunes Client is an iOS application that allows users to easily and quickly search the iTunes album library.
+iTunes Client is an iOS application that allows users to easily and quickly browse the iTunes albums library.
