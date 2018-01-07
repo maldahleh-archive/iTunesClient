@@ -95,7 +95,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f07-xg-SMP">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlbumPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="f07-xg-SMP">
                                             <rect key="frame" x="0.0" y="0.0" width="80" height="79.5"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="80" id="eqA-uL-h9j"/>
@@ -164,4 +164,7 @@
             <point key="canvasLocation" x="599" y="133"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="AlbumPlaceholder" width="100" height="100"/>
+    </resources>
 </document>
