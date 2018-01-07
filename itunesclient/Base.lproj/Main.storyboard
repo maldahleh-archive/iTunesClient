@@ -79,16 +79,16 @@
             </objects>
             <point key="canvasLocation" x="1311" y="133"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Album List Controller-->
         <scene sceneID="tJZ-6y-LB5">
             <objects>
-                <tableViewController id="c3b-ty-BFw" sceneMemberID="viewController">
+                <tableViewController id="c3b-ty-BFw" customClass="AlbumListController" customModule="itunesclient" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="cOU-T9-TMw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AlbumCell" rowHeight="80" id="0qk-FD-3JN">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AlbumCell" rowHeight="80" id="0qk-FD-3JN" customClass="AlbumCell" customModule="itunesclient" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0qk-FD-3JN" id="vFU-yd-x5l">
@@ -133,6 +133,12 @@
                                         <constraint firstItem="eQI-pL-YOT" firstAttribute="leading" secondItem="f07-xg-SMP" secondAttribute="trailing" constant="8" id="bTz-u5-yiv"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="albumTitleLabel" destination="mNz-hC-iD6" id="PV3-4P-Vav"/>
+                                    <outlet property="artworkView" destination="f07-xg-SMP" id="acU-04-lIL"/>
+                                    <outlet property="genreLabel" destination="gbY-hC-hKQ" id="sWn-9n-dU5"/>
+                                    <outlet property="releaseDateLabel" destination="6xX-U2-uH8" id="Dmk-Wd-Egr"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
