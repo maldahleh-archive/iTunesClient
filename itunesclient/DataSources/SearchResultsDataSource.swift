@@ -38,4 +38,10 @@ class SearchResultsDataSource: NSObject, UITableViewDataSource {
         
         return cell
     }
+    
+    // MARK: - Hekper Methods
+    
+    func artist(at indexPath: IndexPath) -> Artist {
+        return data[indexPath.row]
+    }
 }
