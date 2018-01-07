@@ -30,6 +30,12 @@ class AlbumListDataSource: NSObject, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let albumCell = tableView.dequeueReusableCell(withIdentifier: AlbumCell.reuseIdentifier, for: indexPath) as! AlbumCell
         
+        let album = albums[indexPath.row]
+        let viewModel = AlbumCellViewModel(album: album)
+        
+        albumCell.configure(with: viewModel)
+        albumCell.accessoryType = .disclosureIndicator
+        
         return albumCell
     }
 }
