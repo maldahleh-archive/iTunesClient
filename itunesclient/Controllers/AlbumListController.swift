@@ -16,7 +16,7 @@ class AlbumListController: UITableViewController {
     
     var artist: Artist!
     
-    lazy var dataSource: AlbumListDataSource {
+    lazy var dataSource: AlbumListDataSource = {
         return AlbumListDataSource(albums: self.artist.albums)
     }()
     
