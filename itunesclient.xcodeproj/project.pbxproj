@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4A0AD1552001C42C009EE36B /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0AD1542001C42C009EE36B /* AlbumCell.swift */; };
 		4A0AD1572001C560009EE36B /* AlbumListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0AD1562001C560009EE36B /* AlbumListDataSource.swift */; };
+		4A0AD15A2001C70E009EE36B /* AlbumCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0AD1592001C70E009EE36B /* AlbumCellViewModel.swift */; };
 		4A48FDC11FE8A73200EEEEC6 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48FDC01FE8A73200EEEEC6 /* Artist.swift */; };
 		4A48FDC31FE8A78500EEEEC6 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48FDC21FE8A78500EEEEC6 /* Genre.swift */; };
 		4A48FDC51FE8A7CF00EEEEC6 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48FDC41FE8A7CF00EEEEC6 /* Album.swift */; };
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		4A0AD1542001C42C009EE36B /* AlbumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
 		4A0AD1562001C560009EE36B /* AlbumListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListDataSource.swift; sourceTree = "<group>"; };
+		4A0AD1592001C70E009EE36B /* AlbumCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCellViewModel.swift; sourceTree = "<group>"; };
 		4A48FDC01FE8A73200EEEEC6 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		4A48FDC21FE8A78500EEEEC6 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
 		4A48FDC41FE8A7CF00EEEEC6 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
@@ -55,6 +57,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A0AD1582001C6F9009EE36B /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				4A0AD1592001C70E009EE36B /* AlbumCellViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
 		4A48FDBD1FE8A70300EEEEC6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +126,7 @@
 				4A48FDCC1FE8C6D100EEEEC6 /* DataSources */,
 				4A48FDBD1FE8A70300EEEEC6 /* Models */,
 				4A48FDBE1FE8A70B00EEEEC6 /* Views */,
+				4A0AD1582001C6F9009EE36B /* View Models */,
 				4A48FDBF1FE8A71100EEEEC6 /* Controllers */,
 				4AFF2CB61FE8A6BC00C97C1E /* AppDelegate.swift */,
 				4AFF2CBA1FE8A6BC00C97C1E /* Main.storyboard */,
@@ -201,6 +212,7 @@
 				4A48FDC71FE8ACB300EEEEC6 /* Song.swift in Sources */,
 				4A48FDC11FE8A73200EEEEC6 /* Artist.swift in Sources */,
 				4AFF2CB91FE8A6BC00C97C1E /* ViewController.swift in Sources */,
+				4A0AD15A2001C70E009EE36B /* AlbumCellViewModel.swift in Sources */,
 				4A48FDCE1FE8C6EE00EEEEC6 /* SearchResultsDataSource.swift in Sources */,
 				4A0AD1572001C560009EE36B /* AlbumListDataSource.swift in Sources */,
 				4A48FDD01FE8C8B500EEEEC6 /* Stub.swift in Sources */,
