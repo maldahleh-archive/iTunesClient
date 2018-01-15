@@ -10,6 +10,7 @@
 		4A0AD1552001C42C009EE36B /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0AD1542001C42C009EE36B /* AlbumCell.swift */; };
 		4A0AD1572001C560009EE36B /* AlbumListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0AD1562001C560009EE36B /* AlbumListDataSource.swift */; };
 		4A0AD15A2001C70E009EE36B /* AlbumCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0AD1592001C70E009EE36B /* AlbumCellViewModel.swift */; };
+		4A104ACD200D39740002D1DC /* AlbumDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A104ACC200D39740002D1DC /* AlbumDetailViewModel.swift */; };
 		4A48FDC11FE8A73200EEEEC6 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48FDC01FE8A73200EEEEC6 /* Artist.swift */; };
 		4A48FDC31FE8A78500EEEEC6 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48FDC21FE8A78500EEEEC6 /* Genre.swift */; };
 		4A48FDC51FE8A7CF00EEEEC6 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48FDC41FE8A7CF00EEEEC6 /* Album.swift */; };
@@ -30,6 +31,7 @@
 		4A0AD1542001C42C009EE36B /* AlbumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
 		4A0AD1562001C560009EE36B /* AlbumListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListDataSource.swift; sourceTree = "<group>"; };
 		4A0AD1592001C70E009EE36B /* AlbumCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCellViewModel.swift; sourceTree = "<group>"; };
+		4A104ACC200D39740002D1DC /* AlbumDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailViewModel.swift; sourceTree = "<group>"; };
 		4A48FDC01FE8A73200EEEEC6 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		4A48FDC21FE8A78500EEEEC6 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
 		4A48FDC41FE8A7CF00EEEEC6 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				4A0AD1592001C70E009EE36B /* AlbumCellViewModel.swift */,
+				4A104ACC200D39740002D1DC /* AlbumDetailViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 				4A48FDC31FE8A78500EEEEC6 /* Genre.swift in Sources */,
 				4A0AD1552001C42C009EE36B /* AlbumCell.swift in Sources */,
 				4A48FDC51FE8A7CF00EEEEC6 /* Album.swift in Sources */,
+				4A104ACD200D39740002D1DC /* AlbumDetailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
