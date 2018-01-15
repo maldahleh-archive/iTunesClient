@@ -38,4 +38,10 @@ class AlbumListDataSource: NSObject, UITableViewDataSource {
         
         return albumCell
     }
+    
+    // MARK: - Helper
+    
+    func album(for indexPath: IndexPath) -> Album {
+        return albums[indexPath.row]
+    }
 }

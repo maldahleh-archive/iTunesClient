@@ -228,8 +228,9 @@
                                     <constraints>
                                         <constraint firstItem="AO5-08-n2y" firstAttribute="centerY" secondItem="d5A-WO-I3E" secondAttribute="centerY" id="4lF-mM-9IN"/>
                                         <constraint firstItem="wYn-Lb-ubC" firstAttribute="centerY" secondItem="d5A-WO-I3E" secondAttribute="centerY" id="Emm-MK-suT"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="AO5-08-n2y" secondAttribute="trailing" constant="8" id="URI-c4-iE4"/>
+                                        <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="AO5-08-n2y" secondAttribute="trailing" id="URI-c4-iE4"/>
                                         <constraint firstItem="wYn-Lb-ubC" firstAttribute="leading" secondItem="d5A-WO-I3E" secondAttribute="leadingMargin" constant="8" id="bI2-6z-Wmt"/>
+                                        <constraint firstItem="AO5-08-n2y" firstAttribute="leading" secondItem="d5A-WO-I3E" secondAttribute="leadingMargin" constant="304.5" id="t8G-PR-Xmq"/>
                                     </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -239,6 +240,12 @@
                             <outlet property="delegate" destination="ta6-Pk-iqd" id="xp5-dJ-Pe2"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="albumGenreLabel" destination="7Mn-db-VrX" id="WqH-52-WyN"/>
+                        <outlet property="albumReleaseDateLabel" destination="t68-yD-zJc" id="ele-hi-ZZZ"/>
+                        <outlet property="albumTitleLabel" destination="wff-la-aES" id="oPS-J6-Bz0"/>
+                        <outlet property="artworkView" destination="WNP-Q9-xw8" id="a9c-JT-XFK"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xw2-u9-QTj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
