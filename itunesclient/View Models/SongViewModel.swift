@@ -21,6 +21,13 @@ extension SongViewModel {
         let minutes = timeInSeconds / 60 % 60
         let seconds = timeInSeconds % 60
         
-        self.runtime = "\(minutes):\(seconds)"
+        var formattedSeconds = ""
+        if seconds < 10 {
+            formattedSeconds = "0\(seconds)"
+        } else {
+            formattedSeconds = "\(seconds)"
+        }
+        
+        self.runtime = "\(minutes):\(formattedSeconds)"
     }
 }

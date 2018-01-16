@@ -16,10 +16,6 @@ class AlbumCell: UITableViewCell {
     @IBOutlet weak var genreLabel: UILabel!
     @IBOutlet weak var releaseDateLabel: UILabel!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
-    
     func configure(with viewModel: AlbumCellViewModel) {
         artworkView.image = viewModel.artwork
         albumTitleLabel.text = viewModel.title

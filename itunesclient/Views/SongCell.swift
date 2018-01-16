@@ -13,10 +13,6 @@ class SongCell: UITableViewCell {
     
     @IBOutlet weak var songNameLabel: UILabel!
     @IBOutlet weak var songTimeLabel: UILabel!
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
 
     func configure(with viewModel: SongViewModel) {
         songNameLabel.text = viewModel.title
