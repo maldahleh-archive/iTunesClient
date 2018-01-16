@@ -22,7 +22,10 @@ class AlbumListController: UITableViewController {
         }
     }
     
-    let dataSource = AlbumListDataSource(albums: [])
+    lazy var dataSource: AlbumListDataSource = {
+        return AlbumListDataSource(albums: [], tableView: self.tableView)
+    }()
+    
     let client = ItunesAPIClient()
     
     override func viewDidLoad() {

@@ -9,8 +9,7 @@
 import UIKit
 
 class AlbumCell: UITableViewCell {
-    
-    static let reuseIdentifier = "AlbumCell"
+    static let ReuseIdentifier = "AlbumCell"
 
     @IBOutlet weak var artworkView: UIImageView!
     @IBOutlet weak var albumTitleLabel: UILabel!
@@ -19,16 +18,10 @@ class AlbumCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
     func configure(with viewModel: AlbumCellViewModel) {
+        artworkView.image = viewModel.artwork
         albumTitleLabel.text = viewModel.title
         genreLabel.text = viewModel.genre
         releaseDateLabel.text = viewModel.releaseDate
