@@ -9,5 +9,5 @@
 import Foundation
 
 protocol QueryItemProvider {
-    var urlQuery: URLQueryItem { get }
+    var queryItem: URLQueryItem { get }
 }

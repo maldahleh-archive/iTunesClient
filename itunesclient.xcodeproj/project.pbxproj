@@ -29,6 +29,7 @@
 		4A48FDD21FE8CBBF00EEEEC6 /* AlbumListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48FDD11FE8CBBF00EEEEC6 /* AlbumListController.swift */; };
 		4A67EEC0200D51FC00BC06B0 /* ItunesMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A67EEBF200D51FC00BC06B0 /* ItunesMedia.swift */; };
 		4A67EEC2200D524400BC06B0 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A67EEC1200D524400BC06B0 /* Endpoint.swift */; };
+		4AE73520200DC068008DD565 /* ItunesAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE7351F200DC068008DD565 /* ItunesAPIClient.swift */; };
 		4AF640E6200471D300C2F156 /* AlbumDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF640E5200471D300C2F156 /* AlbumDetailController.swift */; };
 		4AFF2CB71FE8A6BC00C97C1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFF2CB61FE8A6BC00C97C1E /* AppDelegate.swift */; };
 		4AFF2CB91FE8A6BC00C97C1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFF2CB81FE8A6BC00C97C1E /* ViewController.swift */; };
@@ -60,6 +61,7 @@
 		4A48FDD11FE8CBBF00EEEEC6 /* AlbumListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListController.swift; sourceTree = "<group>"; };
 		4A67EEBF200D51FC00BC06B0 /* ItunesMedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesMedia.swift; sourceTree = "<group>"; };
 		4A67EEC1200D524400BC06B0 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		4AE7351F200DC068008DD565 /* ItunesAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesAPIClient.swift; sourceTree = "<group>"; };
 		4AF640E5200471D300C2F156 /* AlbumDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailController.swift; sourceTree = "<group>"; };
 		4AFF2CB31FE8A6BC00C97C1E /* itunesclient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = itunesclient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AFF2CB61FE8A6BC00C97C1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				4A0F5699200D9C5B0076BD5D /* JSONDownloader.swift */,
+				4AE7351F200DC068008DD565 /* ItunesAPIClient.swift */,
 				4A0F569B200D9D2E0076BD5D /* ItunesError.swift */,
 			);
 			path = Networking;
@@ -284,6 +287,7 @@
 				4A0F5692200D97920076BD5D /* QueryItemProvider.swift in Sources */,
 				4A48FDD01FE8C8B500EEEEC6 /* Stub.swift in Sources */,
 				4A48FDD21FE8CBBF00EEEEC6 /* AlbumListController.swift in Sources */,
+				4AE73520200DC068008DD565 /* ItunesAPIClient.swift in Sources */,
 				4A104AD1200D44680002D1DC /* SongCell.swift in Sources */,
 				4A48FDCB1FE8B17400EEEEC6 /* SearchResultsController.swift in Sources */,
 				4AFF2CB71FE8A6BC00C97C1E /* AppDelegate.swift in Sources */,
