@@ -9,8 +9,7 @@
 import UIKit
 
 class AlbumListDataSource: NSObject, UITableViewDataSource {
-    
-    private let albums: [Album]
+    private var albums: [Album]
     
     init(albums: [Album]) {
         self.albums = albums
@@ -43,5 +42,9 @@ class AlbumListDataSource: NSObject, UITableViewDataSource {
     
     func album(for indexPath: IndexPath) -> Album {
         return albums[indexPath.row]
+    }
+    
+    func update(with albums: [Album]) {
+        self.albums = albums
     }
 }
