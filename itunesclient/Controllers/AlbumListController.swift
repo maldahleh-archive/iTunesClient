@@ -9,7 +9,6 @@
 import UIKit
 
 class AlbumListController: UITableViewController {
-
     private struct Constants {
         static let AlbumCellHeight: CGFloat = 80.0
     }
@@ -23,7 +22,8 @@ class AlbumListController: UITableViewController {
         }
     }
     
-    var dataSource = AlbumListDataSource(albums: [])
+    let dataSource = AlbumListDataSource(albums: [])
+    let client = ItunesAPIClient()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,10 +43,16 @@ class AlbumListController: UITableViewController {
         if segue.identifier == "showAlbum" {
             if let indexPath = tableView.indexPathForSelectedRow {
                 let album = dataSource.album(for: indexPath)
-                album.songs = Stub.songs
-                
                 let destination = segue.destination as! AlbumDetailController
-                destination.album = album
+                
+                client.lookupSongs(withID: album.id) { album, error in
+                    guard let album = album else {
+                        return
+                    }
+                    
+                    destination.album = album
+                    destination.album?.songs = album.songs
+                }
             }
         }
     }

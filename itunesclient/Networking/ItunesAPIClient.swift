@@ -11,8 +11,10 @@ import Foundation
 typealias Results = [JSON]
 
 typealias RequestCompletionHandler = (Results?, ItunesError?) -> Void
+
 typealias ArtistSearchCompletionHandler = ([Artist], ItunesError?) -> Void
 typealias ArtistLookupCompletionHandler = (Artist?, ItunesError?) -> Void
+typealias SongLookupCompletionHandler = (Album?, ItunesError?) -> Void
 
 class ItunesAPIClient {
     let downloader = JSONDownloader()
@@ -55,6 +57,33 @@ class ItunesAPIClient {
             artist.albums = albums
             
             completion(artist, nil)
+        }
+    }
+    
+    func lookupSongs(withID id: Int, completion: @escaping SongLookupCompletionHandler) {
+        let endpoint = Itunes.lookup(id: id, entity: MusicEntity.song)
+        
+        performRequest(with: endpoint) { results, error in
+            guard let results = results else {
+                completion(nil, error)
+                return
+            }
+            
+            guard let albumInfo = results.first else {
+                completion(nil, .jsonParsingFailure(message: "Results does not contain album."))
+                return
+            }
+            
+            guard let album = Album(json: albumInfo) else {
+                completion(nil, .jsonParsingFailure(message: "Could not parse album."))
+                return
+            }
+            
+            let songResults = results[1..<results.count]
+            let songs = songResults.flatMap { Song(json: $0) }
+            album.songs = songs
+            
+            completion(album, nil)
         }
     }
     

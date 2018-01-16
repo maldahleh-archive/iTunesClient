@@ -9,11 +9,16 @@
 import UIKit
 
 class AlbumDetailController: UITableViewController {
-    var album: Album?
+    var album: Album? {
+        didSet {
+            configure(with: album!)
+            
+            dataSource.update(with: album!.songs)
+            tableView.reloadData()
+        }
+    }
     
-    lazy var dataSource: AlbumDetailDataSource = {
-        return AlbumDetailDataSource(songs: self.album!.songs)
-    }()
+    let dataSource = AlbumDetailDataSource(songs: [])
     
     @IBOutlet weak var artworkView: UIImageView!
     @IBOutlet weak var albumTitleLabel: UILabel!
@@ -22,10 +27,6 @@ class AlbumDetailController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        if let album = album {
-            configure(with: album)
-        }
         
         tableView.dataSource = dataSource
     }

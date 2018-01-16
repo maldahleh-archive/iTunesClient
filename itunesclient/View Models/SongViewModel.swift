@@ -21,6 +21,6 @@ extension SongViewModel {
         let minutes = timeInSeconds / 60 % 60
         let seconds = timeInSeconds % 60
         
-        self.runtime = "\(minutes): \(seconds)"
+        self.runtime = "\(minutes):\(seconds)"
     }
 }
