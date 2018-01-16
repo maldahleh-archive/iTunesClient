@@ -9,7 +9,6 @@
 import UIKit
 
 class SearchResultsController: UITableViewController {
-
     let searchController = UISearchController(searchResultsController: nil)
     let dataSource = SearchResultsDataSource()
     let client = ItunesAPIClient()
