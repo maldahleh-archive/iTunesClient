@@ -34,7 +34,7 @@ class AlbumDetailController: UITableViewController {
     func configure(with album: Album) {
         let viewModel = AlbumDetailViewModel(album: album)
         
-        // TODO: Add implementation for artwork
+        artworkView.image = viewModel.artworkImage
         albumTitleLabel.text = viewModel.title
         albumGenreLabel.text = viewModel.genre
         albumReleaseDateLabel.text = viewModel.releaseDate
